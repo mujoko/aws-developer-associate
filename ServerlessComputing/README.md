@@ -5,15 +5,20 @@ Bear in mind, SAM is just an extention of Cloud Formation. So It will help you t
 
 
 ###Make sure that the Region for this bucket aligns with where you deploy
+I work on ap-southeast-1 Region
+I created *sam-mujoko-bucket* bucket
+```
 aws s3 mb s3://sam-mujoko-bucket --region ap-southeast-1
-
+```
 ###Step 1 - Download a sample application
-sam init --runtime python3.6
-
+```
+#sam init --runtime python3.6
+```
 ###Step 2 - Build your application
-cd sam-app
-sam build
-
+```
+#cd sam-app
+#sam build
+```
 ###Step 3 - Package your application
 ```
 sam package --output-template packaged.yaml --s3-bucket sam-mujoko-bucket
@@ -26,7 +31,7 @@ sam deploy --template-file packaged.yaml --region ap-southeast-1 --capabilities 
 ```
 aws cloudformation describe-stacks --stack-name aws-sam-getting-started --region ap-southeast-1 --query "Stacks[].Outputs"
 ```
-The output will be
+The output will be looks like below
 ```
 [
     [
