@@ -1,7 +1,7 @@
 # Serverless Architecture Model (SAM)
 ## Step to build and deploy SAM into AWS
 Bear in mind, SAM is just an extention of Cloud Formation. So It will help you to define and provision of Lamnda and DynamoDB as core of the Serverless Architecture
-![See the SAM](SAM.PNG)
+![See the SAM](SAM.png)
 
 
 ###Make sure that the Region for this bucket aligns with where you deploy
