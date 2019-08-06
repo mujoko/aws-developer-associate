@@ -23,6 +23,7 @@ sam deploy --template-file packaged.yaml --region ap-southeast-1
 
 ###Step 4 - Get the details of the Service
 aws cloudformation describe-stacks --stack-name aws-sam-getting-started --region ap-southeast-1 --query "Stacks[].Outputs"
+```
 [
     [
         {
@@ -42,6 +43,4 @@ aws cloudformation describe-stacks --stack-name aws-sam-getting-started --region
         }
     ]
 ]
-
-
-https://bppx51xaw6.execute-api.ap-southeast-1.amazonaws.com/Prod/hello
+```
