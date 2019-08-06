@@ -15,14 +15,18 @@ cd sam-app
 sam build
 
 ###Step 3 - Package your application
+```
 sam package --output-template packaged.yaml --s3-bucket sam-mujoko-bucket
-
+```
 ###Step 4 - Deploy your application
-sam deploy --template-file packaged.yaml --region ap-southeast-1
- --capabilities CAPABILITY_IAM --stack-name aws-sam-getting-started
-
+```
+sam deploy --template-file packaged.yaml --region ap-southeast-1 --capabilities CAPABILITY_IAM --stack-name aws-sam-getting-started
+```
 ###Step 4 - Get the details of the Service
+```
 aws cloudformation describe-stacks --stack-name aws-sam-getting-started --region ap-southeast-1 --query "Stacks[].Outputs"
+```
+The output will be
 ```
 [
     [
