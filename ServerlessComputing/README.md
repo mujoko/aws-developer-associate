@@ -12,7 +12,7 @@ aws s3 mb s3://sam-mujoko-bucket --region ap-southeast-1
 ```
 ###Step 1 - Download a sample application
 ```
-#sam init --runtime python3.6
+#sam init --runtime python3.7
 ```
 ###Step 2 - Build your application
 ```
