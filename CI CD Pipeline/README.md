@@ -84,7 +84,9 @@ cache:
 The lifecycle  for EC2
 ![See the Deployment strategy](EC2Hook.PNG)
 
+
 The lifecycle-event for ECS
+
 ![See the event](lifecycle-event-order-ecs.png)
 
 ## Tips
